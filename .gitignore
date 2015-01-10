@@ -1,3 +1,6 @@
 # Sublime Text project files
 accessibility.sublime-project
 accessibility.sublime-workspace
+
+# Bower components
+bower_components
