@@ -5,4 +5,5 @@ accessibility.sublime-workspace
 # Folders
 bower_components
 node_modules
-public_src
+src/build
+.sass-cache
