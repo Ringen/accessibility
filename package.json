@@ -1,0 +1,14 @@
+{
+  "name": "accessibility",
+  "version": "0.1.0",
+  "description": "Example project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ringen/accessibility.git"
+  },
+  "homepage": "https://github.com/Ringen/accessibility",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0"
+  }
+}

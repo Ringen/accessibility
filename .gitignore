@@ -2,5 +2,7 @@
 accessibility.sublime-project
 accessibility.sublime-workspace
 
-# Bower components
+# Folders
 bower_components
+node_modules
+public_src
