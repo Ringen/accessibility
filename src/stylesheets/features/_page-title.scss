@@ -1,4 +1,4 @@
 .a11y_page-title {
+	@extend %a11y_main-container;
 	@extend %a11y_h1;
-	display: none;
 }

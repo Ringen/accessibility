@@ -1,30 +1,29 @@
 .a11y_menu {
 	@extend %a11y_main-container;
-	margin-top: 2em;
 }
 
 .a11y_menu__list {
 	list-style: none;
-	height: 3em;
-	line-height: 3em;
 }
 
 .a11y_menu__list-item {
 	@extend %a11y_h3;
 	display: inline-block;
-	margin-right: 10px;
 }
 
 .a11y_menu__link {
 	@extend %a11y_ordinary-link;
-	padding: 1em;
 	font-size: 1.5em;
-}
+	display: block;
+	padding: $pad-marg-s;
 
-.a11y_menu__icon {
+	&.is-first {
+		margin-left: -$pad-marg-s;
+		color: $color-main;
+		font-size: 3em;
 
-}
-
-.a11y_menu__icon-label {
-	@extend %a11y_visually-hidden;
+		&:hover {
+			color: $color-main-light;
+		}
+	}
 }

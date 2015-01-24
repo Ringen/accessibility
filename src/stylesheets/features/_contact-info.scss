@@ -1,0 +1,22 @@
+.a11y_contact-info {
+	@extend %a11y_main-container;
+}
+
+.a11y_contact-info__column {
+	width: 50%;
+	float: left;
+}
+
+.a11y_contact-info__heading {
+	@extend %a11y_h2;
+}
+
+.a11y_contact-info__text {
+	@extend %a11y_text;
+	display: block;
+	max-width: 50em;
+}
+
+.a11y_contact-info__link {
+	@extend %a11y_link-underlined;
+}
