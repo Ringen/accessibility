@@ -159,8 +159,8 @@ input, select {
 
 /* line 1, ../base/_i-placeholders.scss */
 .a11y_grid, .a11y-header__top-border-links-container, .a11y_page-title, .a11y_menu, .a11y_contact-info, .a11y_contact-form {
-  margin-right: 5%;
-  margin-left: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 /* line 6, ../base/_i-placeholders.scss */
@@ -327,7 +327,7 @@ input, select {
 
 /* line 1, ../features/_carousel.scss */
 .a11y_carousel {
-  width: 90%;
+  width: 80%;
   margin: auto;
   margin-top: 1em;
 }
