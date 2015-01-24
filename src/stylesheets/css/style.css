@@ -122,12 +122,12 @@ input, select {
 /*main color theme*/
 /*measures*/
 /* line 1, ../base/_i-typography.scss */
-.a11y_grid__heading, .a11y_page-title, .a11y_contact-info__heading, .a11y_menu__list-item, .a11y_product__title, .a11y_header__top-border-link, .a11y_product__description, .a11y_product__price, .a11y_product__availability, .a11y_contact-info__text {
+.a11y_grid__heading, .a11y_page-title, .a11y_contact-info__heading, .a11y_contact-form__heading, .a11y_menu__list-item, .a11y_product__title, .a11y_header__top-border-link, .a11y_product__description, .a11y_product__price, .a11y_product__availability, .a11y_contact-info__text, .a11y_contact-form__label, .a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* line 5, ../base/_i-typography.scss */
-.a11y_grid__heading, .a11y_page-title, .a11y_contact-info__heading, .a11y_menu__list-item, .a11y_product__title {
+.a11y_grid__heading, .a11y_page-title, .a11y_contact-info__heading, .a11y_contact-form__heading, .a11y_menu__list-item, .a11y_product__title {
   font-weight: bold;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -140,18 +140,19 @@ input, select {
 }
 
 /* line 18, ../base/_i-typography.scss */
-.a11y_contact-info__heading {
+.a11y_contact-info__heading, .a11y_contact-form__heading {
   font-size: 1.5em;
+  color: #404040;
   margin-top: 30px;
 }
 
-/* line 24, ../base/_i-typography.scss */
+/* line 25, ../base/_i-typography.scss */
 .a11y_menu__list-item, .a11y_product__title {
   font-size: 1em;
 }
 
-/* line 29, ../base/_i-typography.scss */
-.a11y_header__top-border-link, .a11y_product__description, .a11y_product__price, .a11y_product__availability, .a11y_contact-info__text {
+/* line 30, ../base/_i-typography.scss */
+.a11y_header__top-border-link, .a11y_product__description, .a11y_product__price, .a11y_product__availability, .a11y_contact-info__text, .a11y_contact-form__label, .a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area {
   color: #404040;
   margin-bottom: 10px;
 }
@@ -438,6 +439,55 @@ input, select {
 .a11y_contact-info__text {
   display: block;
   max-width: 50em;
+}
+
+/* line 20, ../features/_contact-info.scss */
+.a11y_contact-info__link {
+  display: inline;
+}
+
+/* line 1, ../features/_contact-form.scss */
+.a11y_contact-form {
+  clear: both;
+  margin-top: 30px;
+  width: 50%;
+}
+
+/* line 12, ../features/_contact-form.scss */
+.a11y_contact-form__element-container {
+  width: 49%;
+  float: left;
+}
+/* line 16, ../features/_contact-form.scss */
+.a11y_contact-form__element-container.is-last {
+  float: right;
+}
+
+/* line 21, ../features/_contact-form.scss */
+.a11y_contact-form__label {
+  display: block;
+  clear: both;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 29, ../features/_contact-form.scss */
+.a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area {
+  font-size: 100%;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* line 38, ../features/_contact-form.scss */
+.a11y_contact-form__select {
+  height: 2em;
+}
+
+/* line 43, ../features/_contact-form.scss */
+.a11y_contact-form__text-field {
+  height: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

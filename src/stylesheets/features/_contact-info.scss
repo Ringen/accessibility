@@ -19,4 +19,5 @@
 
 .a11y_contact-info__link {
 	@extend %a11y_link-underlined;
+	display: inline;
 }

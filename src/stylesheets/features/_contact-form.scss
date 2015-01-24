@@ -1,3 +1,50 @@
 .a11y_contact-form {
 	@extend %a11y_main-container;
+	clear: both;
+	margin-top: $pad-marg-l;
+	width: 50%;
+}
+
+.a11y_contact-form__heading {
+	@extend %a11y_h2;
+}
+
+.a11y_contact-form__element-container {
+	width: 49%;
+	float: left;
+
+	&.is-last {
+		float: right;
+	}
+}
+
+.a11y_contact-form__label {
+	@extend %a11y_text;
+	display: block;
+	clear: both;
+	font-weight: bold;
+	margin-bottom: $pad-marg-xs;
+}
+
+%a11y_contact-form__input-element {
+	@extend %a11y_text;
+	font-size: 100%;
+	width: 100%;
+	display: block;
+	margin-bottom: $pad-marg-m;
+	box-sizing: border-box;
+}
+
+.a11y_contact-form__select {
+	@extend %a11y_contact-form__input-element;
+	height: 2em;
+}
+
+.a11y_contact-form__text-field {
+	@extend %a11y_contact-form__input-element;
+	height: 2em;
+}
+
+.a11y_contact-form__text-area {
+	@extend %a11y_contact-form__input-element;
 }
