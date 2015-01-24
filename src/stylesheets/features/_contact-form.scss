@@ -47,3 +47,7 @@
 .a11y_contact-form__text-area {
 	@extend %a11y_contact-form__input-element;
 }
+
+.a11y_contact-form__button {
+	float: right;
+}

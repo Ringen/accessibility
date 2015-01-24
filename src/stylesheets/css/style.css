@@ -561,4 +561,9 @@ input, select {
   height: 2em;
 }
 
+/* line 51, ../features/_contact-form.scss */
+.a11y_contact-form__button {
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */
