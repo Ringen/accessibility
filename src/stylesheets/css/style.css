@@ -438,7 +438,7 @@ input, select {
 /* line 14, ../features/_contact-info.scss */
 .a11y_contact-info__text {
   display: block;
-  max-width: 50em;
+  max-width: 45em;
 }
 
 /* line 20, ../features/_contact-info.scss */
@@ -450,7 +450,7 @@ input, select {
 .a11y_contact-form {
   clear: both;
   margin-top: 30px;
-  width: 50%;
+  width: 70%;
 }
 
 /* line 12, ../features/_contact-form.scss */

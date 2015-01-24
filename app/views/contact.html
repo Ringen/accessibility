@@ -42,55 +42,55 @@
 
 		<h1 class="a11y_page-title">Contacts</h1>
 		<div class="a11y_contact-info">
-			<p class="a11y_contact-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi massa, elementum et blandit eu, bibendum vitae leo. Cras et libero et nibh mollis euismod. Morbi tincidunt sodales ante, in efficitur arcu pharetra quis. Curabitur semper vehicula tortor, id porta massa sodales eu. Morbi fermentum venenatis tellus vitae efficitur.</p>
+			<p class="a11y_contact-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi massa, elementum et blandit eu, bibendum vitae leo. Cras et libero et nibh mollis euismod.</p>
 			<div class="a11y_contact-info__column">
 				<h2 class="a11y_contact-info__heading">Address</h2>
 				<span class="a11y_contact-info__text">Birger Jarlsgatan 7</span>
 				<span class="a11y_contact-info__text">11 45 Stockholm</span>
 				<a class="a11y_contact-info__text a11y_contact-info__link" href="https://www.google.se/maps/place/Birger+Jarlsgatan+7,+111+45+Stockholm/@59.3332294,18.0740357,19z/data=!4m2!3m1!1s0x465f9d5b984af1d3:0xc7859ef641f6f025?hl=en">Our office on map</a>
 
-				<h2 class="a11y_contact-info__heading">Phone/e-mail</h2>
+				<h2 class="a11y_contact-info__heading">Phone/E-mail</h2>
 				<span class="a11y_contact-info__text">Telephone hours: Weekdays 9:00 to 16:30</span>
 				<span class="a11y_contact-info__text">Telephone hours: Weekdays 9:00 to 16:30</span>
 				<address>
 					<a href="mailto:lisa.ring@netlight.com" class="a11y_contact-info__text a11y_contact-info__link">E-mail: lisa.ring@netlight.com</a>
 				</address>
-			</div>
 
-			<div class="a11y_contact-info__column">
 				<h2 class="a11y_contact-info__heading">Your account</h2>
 				<p class="a11y_contact-info__text">Do you want to <a href="#" class="a11y_contact-info__link">update your personal information</a>, see <a href="#" class="a11y_contact-info__link">previous orders</a> or if you have <a href="#" class="a11y_contact-info__link">forgotten your password</a>, you can get a new one sent to your e-mail.</p>
 			</div>
+
+			<div class="a11y_contact-info__column">
+				<form class="a11y_contact-form">
+					<h2 class="a11y_contact-form__heading">Contact us</h2>
+					<label for="a11y_contact-form__subject" class="a11y_contact-form__label">Subject</label>
+					<select id="a11y_contact-form__subject" name="subject" class="a11y_contact-form__select">
+						<option value="default">Select subject</option>
+						<option value="complaint">Complaints</option>
+						<option value="invoicing">Invoicing</option>
+						<option value="other">Other</option>
+					</select>
+
+					<span class="a11y_contact-form__element-container">
+						<label for="a11y_contact-form__first-name" class="a11y_contact-form__label">First name</label>
+						<input id="a11y_contact-form__first-name" type="text" class="a11y_contact-form__text-field" name="firstname" required>
+					</span>
+
+					<span class="a11y_contact-form__element-container is-last">
+						<label for="a11y_contact-form__last-name" class="a11y_contact-form__label">Last name</label>
+						<input id="a11y_contact-form__last-name" type="text" class="a11y_contact-form__text-field" name="lastname" required>
+					</span>
+
+					<label for="a11y_contact-form__email" class="a11y_contact-form__label">E-mail</label>
+					<input id="a11y_contact-form__email" type="email" class="a11y_contact-form__text-field" name="email" required>
+
+					<label for="a11y_contact-form__tel" class="a11y_contact-form__label">Telephone</label>
+					<input id="a11y_contact-form__tel" type="tel" class="a11y_contact-form__text-field" name="phone">
+
+					<label for="a11y_contact-form__message" class="a11y_contact-form__label">Message</label>
+					<textarea id="a11y_contact-form__message" class="a11y_contact-form__text-area" name="message" required></textarea>
+				</form>
+			</div>
 		</div>
-
-		<form class="a11y_contact-form">
-			<h2 class="a11y_contact-form__heading">Contact us</h2>
-			<label for="a11y_contact-form__subject" class="a11y_contact-form__label">Subject</label>
-			<select id="a11y_contact-form__subject" name="subject" class="a11y_contact-form__select">
-				<option value="default">Select subject</option>
-				<option value="complaint">Complaints</option>
-				<option value="invoicing">Invoicing</option>
-				<option value="other">Other</option>
-			</select>
-
-			<span class="a11y_contact-form__element-container">
-				<label for="a11y_contact-form__first-name" class="a11y_contact-form__label">First name</label>
-				<input id="a11y_contact-form__first-name" type="text" class="a11y_contact-form__text-field" name="firstname" required>
-			</span>
-
-			<span class="a11y_contact-form__element-container is-last">
-				<label for="a11y_contact-form__last-name" class="a11y_contact-form__label">Last name</label>
-				<input id="a11y_contact-form__last-name" type="text" class="a11y_contact-form__text-field" name="lastname" required>
-			</span>
-
-			<label for="a11y_contact-form__email" class="a11y_contact-form__label">E-mail</label>
-			<input id="a11y_contact-form__email" type="email" class="a11y_contact-form__text-field" name="email" required>
-
-			<label for="a11y_contact-form__tel" class="a11y_contact-form__label">Telephone</label>
-			<input id="a11y_contact-form__tel" type="tel" class="a11y_contact-form__text-field" name="phone">
-
-			<label for="a11y_contact-form__message" class="a11y_contact-form__label">Message</label>
-			<textarea id="a11y_contact-form__message" class="a11y_contact-form__text-area" name="message" required></textarea>
-		</form>
 	</body>
 </html>
