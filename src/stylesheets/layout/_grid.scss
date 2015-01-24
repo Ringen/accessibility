@@ -15,6 +15,7 @@ $grid-w-margin: 4%;
 
 .a11y_grid {
 	@extend %a11y_main-container;
+	@extend %a11y_clearfix;
 	margin-top: $pad-marg-l;
 }
 

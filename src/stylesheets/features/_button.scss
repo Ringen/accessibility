@@ -1,0 +1,14 @@
+.a11y_button {
+	@extend %a11y_font;
+	display: block;
+	background: $color-main;
+	border: none;
+	color: $color-white;
+	font-size: 1em;
+	margin-top: $pad-marg-m;
+	padding: $pad-marg-m $pad-marg-xxl;
+
+	&:hover {
+		background: $color-main-light;
+	}
+}

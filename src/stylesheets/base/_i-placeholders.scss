@@ -14,6 +14,17 @@
 	border: 0;
 }
 
+%a11y_clearfix {
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+	&:after { 
+		clear: both;
+	}
+}
+
 %a11y_link {
 	box-sizing: border-box;
 	text-decoration: none;
