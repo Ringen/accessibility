@@ -6,9 +6,9 @@ $(document).ready(function(){
 	$('.a11y_carousel').slick({
 		slide: carouselElementSelector,
 		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		accessibility: false,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		accessibility: true,
 		arrows: false
 	});
 

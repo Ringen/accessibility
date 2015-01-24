@@ -2,16 +2,41 @@
 $color-white: #ffffff;
 $color-black: #000000;
 
-$color-gray: #4a4a4a;
-$color-light-gray: #7d7d7d;
+$color-gray: #404040;
+$color-light-gray: #808080;
+$color-white-gray: #e0e0e0;
+
+$color-pink: #CF5390;
+$color-light-pink: #EE7CB4;
+$color-dark-pink: #8A305C;
+$color-white-pink: #FFBEDD;
+
+$color-yellow: #F0F763;
+$color-light-yellow: #F8FE84;
+$color-dark-yellow: #9FA439;
+$color-white-yellow: #FCFFBE;
+
+$color-green: #4CBD65;
+$color-light-green: #78E791;
+$color-dark-green: #2C7E3E;
+$color-white-green: #BDFECB;
 
 $color-netlight-purple: #36185f;
 $color-netlight-gold: #cc9933;
 
 /*links*/
-$color-link: $color-netlight-purple;
+$color-link: $color-gray;
 $color-link-outline: #afffff;
 
 /*icons*/
 $color-icon: $color-gray;
 $color-icon-hover: $color-light-gray;
+
+/*text*/
+$color-text: $color-gray;
+
+/*main color theme*/
+$color-main: $color-pink;
+$color-main-light: $color-light-pink;
+$color-main-dark: $color-dark-pink;
+$color-main-white: $color-white-pink;

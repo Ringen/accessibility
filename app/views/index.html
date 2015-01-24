@@ -11,15 +11,54 @@
 		<a href="#a11y_menu" class="a11y_skip-link">Skip to main menu</a>
 		<a href="#a11y_content" class="a11y_skip-link">Skip to content</a>
 
-		<h1 class="a11y_page-title">Accessibility</h1>
+		<header class="a11y_header">
+			<div class="a11y_header__top-border">
+				<span class="a11y-header__top-border-links-container">
+					<a href="tel:08-987 65 43" class="a11y_header__top-border-link"><i class="fa fa-phone fa-1x a11y_header__top-border-icon"></i>08-987 65 43</a>
+					<a href="#" class="a11y_header__top-border-link"><i class="fa fa-shopping-cart fa-1x a11y_header__top-border-icon"></i> Cart</a>
+				</span>
+			</div>
+			<h1 class="a11y_page-title">Accessibility</h1>
+			<nav id="a11y_menu" class="a11y_menu">
+				<ul class="a11y_menu__list">
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="1"><i class="fa fa-home fa-2x a11y_menu__icon"></i><span class="a11y_menu__icon-label">Startpage</span></a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="2">Cats</a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="3">Dogs</a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="4">Rabbits</a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="5">Pigs</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-		<section class="a11y_carousel" tabindex="-1">
-			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/cat1.jpg" class="a11y_carousel__image" title="cute little cat on its back"></a>
-			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/cat2.jpg" class="a11y_carousel__image" title="two kittens in the grass"></a>
-			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/cat3.jpg" class="a11y_carousel__image" title="a kitten lurking around"></a>
-			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/rabbit1.jpg" class="a11y_carousel__image" title="cute little rabbit"></a>
-			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/pig1.jpg" class="a11y_carousel__image" title="a piglet in the grass"></a>
-			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/rabbit2.jpg" class="a11y_carousel__image" title="two rabbits kissing"></a>
+		<div class="a11y_carousel" tabindex="-1">
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link">
+				<img src="../../src/images/cat1.jpg" class="a11y_carousel__image" alt="cute little cat on its back" title="first image">
+			</a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link">
+				<img src="../../src/images/cat2.jpg" class="a11y_carousel__image" alt="two kittens in the grass" title="second image">
+			</a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link">
+				<img src="../../src/images/cat3.jpg" class="a11y_carousel__image" alt="a kitten lurking around" title="third image">
+			</a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link">
+				<img src="../../src/images/rabbit1.jpg" class="a11y_carousel__image" alt="cute little rabbit" title="forth image">
+			</a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link">
+				<img src="../../src/images/pig1.jpg" class="a11y_carousel__image" alt="a piglet in the grass" title="fifth image">
+			</a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link">
+				<img src="../../src/images/rabbit2.jpg" class="a11y_carousel__image" alt="two rabbits kissing" title="sixth image">
+			</a>
 			<button id="a11y_carousel__prev-button" class="a11y_carousel__button a11y_carousel__button--prev">
 				<i class="fa fa-chevron-left fa-4x a11y_carousel__button-icon"></i>
 				<span class="a11y_carousel__button-label">Previous</span>
@@ -28,40 +67,103 @@
 				<i class="fa fa-chevron-right fa-4x a11y_carousel__button-icon"></i>
 				<span class="a11y_carousel__button-label">Next</span>
 			</button>
-		</section>
+		</div>
 
-		<section class="a11y_menu">
-			<nav id="a11y_menu">
-				<ul class="a11y_menu__list">
-					<li class="a11y_menu__list-item">
-						<a href="#" class="a11y_menu__link" accesskey="1">Menu item 1</a>
-					</li>
-					<li class="a11y_menu__list-item">
-						<a href="#" class="a11y_menu__link" accesskey="2">Menu item 2</a>
-					</li>
-					<li class="a11y_menu__list-item">
-						<a href="#" class="a11y_menu__link" accesskey="3">Menu item 3</a>
-					</li>
-					<li class="a11y_menu__list-item">
-						<a href="#" class="a11y_menu__link" accesskey="4">Menu item 4</a>
-					</li>
-				</ul>
-			</nav>
-		</section>
+		<div class="a11y_grid">
+			<h2 class="a11y_grid__heading">New arrivals</h2>
+			<div class="a11y_grid__item a11y_grid__item--nth-1 a11y_js-product a11y_product">
+				<a href="#" class="a11y_product__link" title="product name">
+					<img src="../../src/images/capybara1.jpg" class="a11y_product__image" alt="product image" title="product name">
+					<span class="a11y_product__title">Capybara</span>
+					<span class="a11y_product__description">Etiam pellentesque nunc imperdiet tempor consectetur</span>
+					<span class="a11y_product__price"><span class="a11y_accessibility-text">Price </span>1500 kr</span>
+				</a>
+				<div class="a11y_js-product__expandable-section a11y_product__expandable-section">
+					<span class="a11y_product__availability"><i class="fa fa-check a11y_product__availability-icon"></i>In stock</span>
+					<span class="a11y_product__ranking">
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+					</span>
+				</div>
+			</div>
+			<div class="a11y_grid__item a11y_js-product a11y_product">
+				<a href="#" class="a11y_product__link" title="product name">
+					<img src="../../src/images/capybara1.jpg" class="a11y_product__image" alt="product image" title="product name">
+					<span class="a11y_product__title">Capybara</span>
+					<span class="a11y_product__description">Etiam pellentesque nunc imperdiet tempor consectetur</span>
+					<span class="a11y_product__price"><span class="a11y_accessibility-text">Price </span>1500 kr</span>
+				</a>
+				<div class="a11y_js-product__expandable-section a11y_product__expandable-section">
+					<span class="a11y_product__availability"><i class="fa fa-check a11y_product__availability-icon"></i>In stock</span>
+					<span class="a11y_product__ranking">
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+					</span>
+				</div>
+			</div>
+			<div class="a11y_grid__item a11y_js-product a11y_product">
+				<a href="#" class="a11y_product__link" title="product name">
+					<img src="../../src/images/capybara1.jpg" class="a11y_product__image" alt="product image" title="product name">
+					<span class="a11y_product__title">Capybara</span>
+					<span class="a11y_product__description">Etiam pellentesque nunc imperdiet tempor consectetur</span>
+					<span class="a11y_product__price"><span class="a11y_accessibility-text">Price </span>1500 kr</span>
+				</a>
+				<div class="a11y_js-product__expandable-section a11y_product__expandable-section">
+					<span class="a11y_product__availability"><i class="fa fa-check a11y_product__availability-icon"></i>In stock</span>
+					<span class="a11y_product__ranking">
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+					</span>
+				</div>
+			</div>
+			<div class="a11y_grid__item a11y_js-product a11y_product">
+				<a href="#" class="a11y_product__link" title="product name">
+					<img src="../../src/images/capybara1.jpg" class="a11y_product__image" alt="product image" title="product name">
+					<span class="a11y_product__title">Capybara</span>
+					<span class="a11y_product__description">Etiam pellentesque nunc imperdiet tempor consectetur</span>
+					<span class="a11y_product__price"><span class="a11y_accessibility-text">Price </span>1500 kr</span>
+				</a>
+				<div class="a11y_js-product__expandable-section a11y_product__expandable-section">
+					<span class="a11y_product__availability"><i class="fa fa-check a11y_product__availability-icon"></i>In stock</span>
+					<span class="a11y_product__ranking">
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+						<i class="fa fa-star-o a11y_product-ranking-icon"></i>
+					</span>
+				</div>
+			</div>
+		</div>
 
 		<section class="a11y_contact">
 		</section>
 
-		Skiplinks
-		Accesskeys
-		Karusell
-		Popout-grej
-		Osynliga texter
-		Formulär
+		<section style="margin-top:5em; clear:both;">
+			<ul>
+				<li>Skiplinks</li>
+				<li>Accesskeys</li>
+				<li>Karusell</li>
+				<li>Popout-grej</li>
+				<li>Osynliga texter</li>
+				<li>Formulär</li>
+			</ul>
+			
+		</section>
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="../../bower_components/slick-carousel/slick/slick.min.js"></script>
 		<script type="text/javascript" src="../../src/javascripts/carousel.js"></script>
+		<script type="text/javascript" src="../../src/javascripts/product.js"></script>
 	</body>
 </html>

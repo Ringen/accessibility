@@ -1,6 +1,32 @@
-%a11y_h1 {
-	font-size: 2em;
+%a11y_font {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+%a11y_heading {
+	@extend %a11y_font;
 	font-weight: bold;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+
+%a11y_h1 {
+	@extend %a11y_heading;
+	font-size: 2em;
+	color: $color-text;
+}
+
+%a11y_h2 {
+	@extend %a11y_heading;
+	font-size: 1.5em;
+}
+
+%a11y_h3 {
+	@extend %a11y_heading;
+	font-size: 1em;
+}
+
+%a11y_text {
+	@extend %a11y_font;
+	color: $color-text;
+	margin-bottom: $pad-marg-s;
 }

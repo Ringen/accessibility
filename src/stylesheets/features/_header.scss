@@ -1,0 +1,33 @@
+.a11y_header {
+	
+}
+
+.a11y_header__top-border {
+	height: 2em;
+	background-color: $color-main;
+	border-bottom: 2px solid $color-main-dark;
+}
+
+.a11y-header__top-border-links-container {
+	@extend %a11y_main-container;
+	float: right;
+}
+
+.a11y_header__top-border-link {
+	@extend %a11y_ordinary-link;
+	@extend %a11y_text;
+	font-size: 1.2em;
+	padding: 0.3em 0.5em;
+	line-height: 1.7em;
+	height: 100%;
+
+	&:hover,
+	&:focus {
+		background-color: $color-main-light;
+		text-decoration: none;
+	}
+}
+
+.a11y_header__top-border-icon {
+	margin-right: 0.3em;
+}

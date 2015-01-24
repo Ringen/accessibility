@@ -2,7 +2,7 @@
 }
 
 .a11y_skip-link {
-	@extend %a11y_link;
+	@extend %a11y_ordinary-link;
 	position: absolute;
 	left: 0;
 	top: -3em;

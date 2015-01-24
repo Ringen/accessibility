@@ -16,15 +16,26 @@
 
 %a11y_link {
 	box-sizing: border-box;
-	font-weight: bold;
 	text-decoration: none;
+	color: $color-link;
 
 	&:focus {
-		text-decoration: underline;
 		outline-color: $color-link-outline;
+		text-decoration: underline;
 	}
+}
+
+%a11y_ordinary-link {
+	@extend %a11y_link;
+	font-weight: bold;
 
 	&:hover {
-		text-decoration: none;
+		text-decoration: underline;
 	}
+}
+
+%a11y_underline-on-hover {
+	&:hover {
+		text-decoration: underline;
+	} 
 }
