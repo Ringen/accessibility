@@ -1,0 +1,30 @@
+%a11y_main-container {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+%a11y_visually-hidden {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px;
+	width: 1px; 
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+%a11y_link {
+	box-sizing: border-box;
+	font-weight: bold;
+	text-decoration: none;
+
+	&:focus {
+		text-decoration: underline;
+		outline-color: $color-link-outline;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}

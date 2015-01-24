@@ -2,17 +2,66 @@
 <html lang="eng">
 	<head>
 		<title>Lisa Ring | Accessibility</title>
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../bower_components/slick-carousel/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="../../src/stylesheets/css/style.css"/>
 	</head>
 	<body>
-	<h1>Start</h1>
-	<div class="your-class">
-        <div>your content 1</div>
-        <div>your content 2</div>
-        <div>your content 3</div>
-    </div>
-	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+		<a href="#a11y_menu" class="a11y_skip-link">Skip to main menu</a>
+		<a href="#a11y_content" class="a11y_skip-link">Skip to content</a>
+
+		<h1 class="a11y_page-title">Accessibility</h1>
+
+		<section class="a11y_carousel" tabindex="-1">
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/cat1.jpg" class="a11y_carousel__image" title="cute little cat on its back"></a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/cat2.jpg" class="a11y_carousel__image" title="two kittens in the grass"></a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/cat3.jpg" class="a11y_carousel__image" title="a kitten lurking around"></a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/rabbit1.jpg" class="a11y_carousel__image" title="cute little rabbit"></a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/pig1.jpg" class="a11y_carousel__image" title="a piglet in the grass"></a>
+			<a href="#" class="a11y_js-carousel__link a11y_carousel__link"><img src="../../src/images/rabbit2.jpg" class="a11y_carousel__image" title="two rabbits kissing"></a>
+			<button id="a11y_carousel__prev-button" class="a11y_carousel__button a11y_carousel__button--prev">
+				<i class="fa fa-chevron-left fa-4x a11y_carousel__button-icon"></i>
+				<span class="a11y_carousel__button-label">Previous</span>
+			</button>
+			<button id="a11y_carousel__next-button" class="a11y_carousel__button a11y_carousel__button--next">
+				<i class="fa fa-chevron-right fa-4x a11y_carousel__button-icon"></i>
+				<span class="a11y_carousel__button-label">Next</span>
+			</button>
+		</section>
+
+		<section class="a11y_menu">
+			<nav id="a11y_menu">
+				<ul class="a11y_menu__list">
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="1">Menu item 1</a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="2">Menu item 2</a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="3">Menu item 3</a>
+					</li>
+					<li class="a11y_menu__list-item">
+						<a href="#" class="a11y_menu__link" accesskey="4">Menu item 4</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+
+		<section class="a11y_contact">
+		</section>
+
+		Skiplinks
+		Accesskeys
+		Karusell
+		Popout-grej
+		Osynliga texter
+		Formulär
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="../../bower_components/slick-carousel/slick/slick.min.js"></script>
+		<script type="text/javascript" src="../../src/javascripts/carousel.js"></script>
 	</body>
 </html>

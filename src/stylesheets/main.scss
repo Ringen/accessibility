@@ -1,2 +1,23 @@
-@import 'style';
-@import 'test';
+
+/*base*/
+@import 'base/normalize';
+@import 'base/i-colors';
+@import 'base/i-typography';
+@import 'base/i-placeholders';
+@import 'base/style';
+
+/*vendors*/
+@import 'vendors/slick';
+
+/*helpers*/
+@import 'helpers/mixins';
+
+/*layout*/
+@import 'layout/main-container';
+
+/*features*/
+@import 'features/page-title';
+@import 'features/skip-links';
+@import 'features/menu';
+@import 'features/carousel';
+@import 'features/contact';

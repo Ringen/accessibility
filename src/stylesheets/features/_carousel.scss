@@ -1,0 +1,45 @@
+.a11y_carousel {
+	width: 90%;
+	margin: auto;
+	margin-top: 5em;
+}
+
+.a11y_carousel__link {
+	@extend %a11y_link;
+}
+
+.a11y_carousel__image {
+	width: 99%;
+	height: auto;
+	display: inline-block;
+	margin: 1%;
+}
+
+
+.a11y_carousel__button {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+}
+
+.a11y_carousel__button--prev {
+	left: -60px;
+}
+
+.a11y_carousel__button--next {
+	right: -60px;
+}
+
+.a11y_carousel__button-icon {
+	color: $color-icon;
+
+	&:hover {
+		color: $color-icon-hover;
+	}
+}
+
+.a11y_carousel__button-label {
+	@extend %a11y_visually-hidden;
+}

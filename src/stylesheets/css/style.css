@@ -1,0 +1,264 @@
+/*base*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+/* line 9, ../base/_normalize.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 30, ../base/_normalize.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../base/_normalize.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 39, ../base/_normalize.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 43, ../base/_normalize.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../base/_normalize.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 53, ../base/_normalize.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 62, ../base/_normalize.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 69, ../base/_normalize.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 76, ../base/_normalize.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 80, ../base/_normalize.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 85, ../base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 91, ../base/_normalize.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 100, ../base/_normalize.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/*base colors*/
+/*links*/
+/*icons*/
+/* line 1, ../base/_i-typography.scss */
+.a11y_page-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* line 1, ../base/_i-placeholders.scss */
+.a11y_menu, .a11y_contact {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+/* line 6, ../base/_i-placeholders.scss */
+.a11y_carousel__button-label {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* line 17, ../base/_i-placeholders.scss */
+.a11y_skip-link, .a11y_menu__link, .a11y_carousel__link {
+  box-sizing: border-box;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 22, ../base/_i-placeholders.scss */
+.a11y_skip-link:focus, .a11y_menu__link:focus, .a11y_carousel__link:focus {
+  text-decoration: underline;
+  outline-color: #afffff;
+}
+/* line 27, ../base/_i-placeholders.scss */
+.a11y_skip-link:hover, .a11y_menu__link:hover, .a11y_carousel__link:hover {
+  text-decoration: none;
+}
+
+/*vendors*/
+/* line 1, ../vendors/_slick.scss */
+.slick-prev {
+  color: black;
+}
+
+/* line 6, ../vendors/_slick.scss */
+.slick-next {
+  color: black;
+}
+
+/*helpers*/
+/*layout*/
+/* line 1, ../layout/_main-container.scss */
+.a11y_main-container {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+/*features*/
+/* line 1, ../features/_page-title.scss */
+.a11y_page-title {
+  display: none;
+}
+
+/* line 4, ../features/_skip-links.scss */
+.a11y_skip-link {
+  position: absolute;
+  left: 0;
+  top: -3em;
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  line-height: 2.5em;
+  background: #36185f;
+  color: #ffffff;
+}
+/* line 16, ../features/_skip-links.scss */
+.a11y_skip-link:focus {
+  top: 0;
+}
+
+/* line 5, ../features/_menu.scss */
+.a11y_menu__list {
+  list-style: none;
+}
+
+/* line 9, ../features/_menu.scss */
+.a11y_menu__list-item {
+  display: inline-block;
+  margin-right: 3em;
+}
+
+/* line 14, ../features/_menu.scss */
+.a11y_menu__link {
+  color: #36185f;
+}
+
+/* line 1, ../features/_carousel.scss */
+.a11y_carousel {
+  width: 90%;
+  margin: auto;
+  margin-top: 5em;
+}
+
+/* line 11, ../features/_carousel.scss */
+.a11y_carousel__image {
+  width: 99%;
+  height: auto;
+  display: inline-block;
+  margin: 1%;
+}
+
+/* line 19, ../features/_carousel.scss */
+.a11y_carousel__button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+
+/* line 27, ../features/_carousel.scss */
+.a11y_carousel__button--prev {
+  left: -60px;
+}
+
+/* line 31, ../features/_carousel.scss */
+.a11y_carousel__button--next {
+  right: -60px;
+}
+
+/* line 35, ../features/_carousel.scss */
+.a11y_carousel__button-icon {
+  color: #4a4a4a;
+}
+/* line 38, ../features/_carousel.scss */
+.a11y_carousel__button-icon:hover {
+  color: #7d7d7d;
+}
+
+/*# sourceMappingURL=style.css.map */

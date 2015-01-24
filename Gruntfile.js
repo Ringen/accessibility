@@ -1,7 +1,16 @@
 module.exports = function(grunt) {
 
+	var config = {
+		jsDir: 'src/javascripts',
+		cssDir: 'src/stylesheets',
+		outputDir: 'src/build',
+	};
+
 	// Project configuration.
 	grunt.initConfig({
+
+		config: config,
+
 		pkg: grunt.file.readJSON('package.json'),
 		concat: {
 			options: {
@@ -9,34 +18,49 @@ module.exports = function(grunt) {
 			},
 			build: {
 				src: ['src/javascripts/*.js'],
-				dest: 'src/build/javascripts/<%= pkg.name %>.min.js'
+				dest: '<%= config.outputDir %>/javascripts/<%= pkg.name %>.min.js'
 			}
 		},
 		sass: {
-			dist: {
+			dev: {
 				files: {
-					'src/build/stylesheets/style.css' : 'src/stylesheets/main.scss'
+					'<%= config.cssDir %>/css/style.css' : '<%= config.cssDir %>/main.scss'
 				},
 				options: {
-					style: 'nested',
-					sourcemap: false
+					style: 'expanded',
+					lineNumbers: true
+				}
+			},
+			dist: {
+				files: {
+					'<%= config.outputDir %>/stylesheets/style.css' : '<%= config.cssDir %>/style.scss'
+				},
+				options: {
+					style: 'compressed',
+					sourcemap: 'none'
 				}
 			}
 		},
 		watch: {
+			// css: {
+			// 	files: '**/*.scss',
+			// 	tasks: ['sass']
+			// }
+
 			css: {
-				files: '**/*.scss',
-				tasks: ['sass']
+				files: '<%= config.cssDir %>/**/*.{scss,sass}',
+				tasks: ['sass:dev']
 			}
 		}
 	});
 
-	// Load the plugin that provides the "uglify" task.
+	// Load plugins
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 
-	// Default task(s).
-	grunt.registerTask('default', ['sass', 'concat']);
-	grunt.registerTask('watch', ['watch']);
+	// Create tasks.
+	grunt.registerTask('default', ['sass:dev']); // Default task. Run with 'grunt'
+	grunt.registerTask('build', ['sass:dist', 'concat']); // Run with 'grunt build'
+	grunt.registerTask('watcher', ['watch']); // Run with 'grunt watcher'
 };

@@ -1,0 +1,17 @@
+.a11y_menu {
+	@extend %a11y_main-container;
+}
+
+.a11y_menu__list {
+	list-style: none;
+}
+
+.a11y_menu__list-item {
+	display: inline-block;
+	margin-right: 3em;
+}
+
+.a11y_menu__link {
+	@extend %a11y_link;
+	color: $color-link;
+}
