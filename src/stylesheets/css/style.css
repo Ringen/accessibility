@@ -122,7 +122,7 @@ input, select {
 /*text*/
 /*measures*/
 /* line 1, ../base/_i-typography.scss */
-.a11y_grid__heading, .a11y_page-title, .a11y_product__heading, .a11y_contact-info__heading, .a11y_contact-form__heading, .a11y_menu__list-item, .a11y_product-item__title, .a11y_product__sub-heading, .a11y_header__top-border-link, .a11y_header__cart-counter, .a11y_product-item__description, .a11y_product-item__price, .a11y_product-item__availability, .a11y_product__price-label, .a11y_product__price, .a11y_product__info-text, .a11y_contact-info__text, .a11y_contact-form__label, .a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area, .a11y_button {
+.a11y_grid__heading, .a11y_page-title, .a11y_product__heading, .a11y_contact-info__heading, .a11y_contact-form__heading, .a11y_menu__list-item, .a11y_product-item__title, .a11y_product__sub-heading, .a11y_header__top-border-link, .a11y_header__cart-counter, .a11y_product-item__description, .a11y_product-item__price, .a11y_product-item__availability, .a11y_product__price-label, .a11y_product__info-text, .a11y_contact-info__text, .a11y_contact-form__label, .a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area, .a11y_button {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -152,7 +152,7 @@ input, select {
 }
 
 /* line 30, ../base/_i-typography.scss */
-.a11y_header__top-border-link, .a11y_header__cart-counter, .a11y_product-item__description, .a11y_product-item__price, .a11y_product-item__availability, .a11y_product__price-label, .a11y_product__price, .a11y_product__info-text, .a11y_contact-info__text, .a11y_contact-form__label, .a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area {
+.a11y_header__top-border-link, .a11y_header__cart-counter, .a11y_product-item__description, .a11y_product-item__price, .a11y_product-item__availability, .a11y_product__price-label, .a11y_product__info-text, .a11y_contact-info__text, .a11y_contact-form__label, .a11y_contact-form__select, .a11y_contact-form__text-field, .a11y_contact-form__text-area {
   color: #404040;
   margin-bottom: 10px;
 }
@@ -495,11 +495,10 @@ input, select {
 
 /* line 34, ../features/_product.scss */
 .a11y_product__price {
-  font-size: 2em;
   color: #CF5390;
 }
 
-/* line 44, ../features/_product.scss */
+/* line 42, ../features/_product.scss */
 .a11y_product__sub-heading {
   margin-top: 15px;
   padding-top: 15px;
