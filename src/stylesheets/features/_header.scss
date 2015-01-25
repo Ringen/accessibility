@@ -31,3 +31,13 @@
 .a11y_header__top-border-icon {
 	margin-right: 0.3em;
 }
+
+.a11y_header__cart-counter {
+	@extend %a11y_text;
+	
+	&.is-not-empty {
+		color: $color-dark-green;
+		color: $color-white-yellow;
+		color: $color-main-white;
+	}
+}

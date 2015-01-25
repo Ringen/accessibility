@@ -24,9 +24,15 @@ $color-white-green: #BDFECB;
 $color-netlight-purple: #36185f;
 $color-netlight-gold: #cc9933;
 
+/*main color theme*/
+$color-main: $color-pink;
+$color-main-light: $color-light-pink;
+$color-main-dark: $color-dark-pink;
+$color-main-white: $color-white-pink;
+
 /*links*/
 $color-link: $color-gray;
-$color-link-outline: #afffff;
+$color-link-outline: $color-main;
 
 /*icons*/
 $color-icon: $color-gray;
@@ -34,9 +40,3 @@ $color-icon-hover: $color-light-gray;
 
 /*text*/
 $color-text: $color-gray;
-
-/*main color theme*/
-$color-main: $color-pink;
-$color-main-light: $color-light-pink;
-$color-main-dark: $color-dark-pink;
-$color-main-white: $color-white-pink;
