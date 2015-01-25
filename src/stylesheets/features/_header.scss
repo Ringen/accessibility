@@ -36,8 +36,6 @@
 	@extend %a11y_text;
 	
 	&.is-not-empty {
-		color: $color-dark-green;
-		color: $color-white-yellow;
 		color: $color-main-white;
 	}
 }

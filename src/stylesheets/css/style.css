@@ -312,8 +312,6 @@ input, select {
 
 /* line 38, ../features/_header.scss */
 .a11y_header__cart-counter.is-not-empty {
-  color: #2C7E3E;
-  color: #FDFFCF;
   color: #FBCCE4;
 }
 
